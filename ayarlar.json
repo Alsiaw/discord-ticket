@@ -1,0 +1,34 @@
+{
+    "Bot": {
+        "SunucuID": ""
+    },
+    "botDurum": [
+        "alsia was here"
+    ],
+    "Embed": {
+        "footerText": "alsia was here.",
+        "link": "",
+        "authorembed": "ᴀʟꜱɪᴀ ᴛɪᴄᴋᴇᴛ",
+        "iconURL": ""
+    },
+    "Yetkiler": {
+        "Staff": [""],
+        "yetkili": ""
+    },
+    "Resimler": {
+        "moderasyonURL": ""
+    },
+    "Ticket": {
+        "ticketCategory": "",
+        "ticketLog": "",
+        "ticketLog2": ""
+    },
+    "Kanallar": {
+        "bilgiKanal": ""
+    },
+    "WebServer": {
+        "port": 3000,
+        "ip": "0.0.0.0",
+        "publicURL": "http://vdsipsi:3000"
+    }
+}
