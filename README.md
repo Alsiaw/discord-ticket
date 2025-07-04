@@ -268,7 +268,7 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 ## 📞 Destek ve İletişim
 
 - 🐛 **Bug Report:** [GitHub Issues](https://github.com/kullaniciadi/alsia-ticket-bot/issues)
-- 💬 **Discord Destek:** [Destek Sunucusu](https://discord.gg/SUNUCU_LINKI)
+- 💬 **Discord Destek:** [Destek Sunucusu](https://discord.gg/mcqueen)
 - 📧 **E-mail:** destek@example.com
 
 ---
@@ -302,11 +302,9 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 <div align="center">
 
-### 💝 Teşekkürler
 
-**Alsia Ticket Bot** kullandığınız için teşekkür ederiz!
 
-*Made with ❤️ by Alsia Development Team*
+*Made with ❤️ by Alsia*
 
 ---
 
