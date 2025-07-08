@@ -2,20 +2,13 @@ const discordTranscripts = require('discord-html-transcripts');
 const { EmbedBuilder, Events } = require('discord.js');
 const moment = require('moment');
 const ayarlar = require('../../ayarlar.json');
-const express = require('express');
-const ejs = require('ejs');
+
 const db = require("croxydb");
 
 moment.locale('tr');
 
-const app = express();
 
-app.set("view engine", "ejs");
 
-app.listen(ayarlar.WebServer.port, ayarlar.WebServer.ip, () => {
-  console.log(`🌐 » Web sunucusu başlatıldı: ${ayarlar.WebServer.publicURL}
-----------------------`);
-});
 
 function calculateTimeDifference(start, end) {
   const difference = end - start;
@@ -75,7 +68,7 @@ module.exports = {
       const timeDifference = calculateTimeDifference(openingTime, closingTime);
 
       discordTranscripts.createTranscript(channel, {
-        fileName: `${interaction.channel.id}.ejs`,
+        fileName: `${interaction.channel.id}.html`,
         saveImages: true,
         footerText: "Dev By Alsia",
         poweredBy: false,
@@ -95,7 +88,6 @@ module.exports = {
             <:8676gasp:1327585524231176192>  ・ \`ᴛɪᴄᴋᴇᴛ ᴀᴄᴀɴ:\`:  <@${ticketAcanId}>  
             <:king_crown:1327600238407450697>   ・ \`ᴛɪᴄᴋᴇᴛ ᴋᴀᴘᴀᴛᴀɴ:\`: <@${interaction.user.id}>
         
-            <a:5961darkbluetea:1327585257578561548>  ・ \`ᴅᴇsᴛᴇɢɪɴ ʏᴇᴅᴇɢɪ:\` [ticket.${ayarlar.Embed.authorembed.toLowerCase()}/${interaction.channel.name}](${ayarlar.WebServer.publicURL}/${interaction.channel.id})
         
            **» DESTEK KANALI**\n\`\`\`ansi\n- ${channel.name}\`\`\`
             **» DESTEK KATEGORİSİ**\n\`\`\`ansi\n- ${topic}\`\`\`
