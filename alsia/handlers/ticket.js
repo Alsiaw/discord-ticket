@@ -24,7 +24,7 @@ module.exports = {
         if (interaction.isButton()) {
             const selectedCategory = interaction.customId;
             
-            // Map the new custom IDs to the old ones for backwards compatibility
+           
             let categoryKey = selectedCategory;
             if (selectedCategory === 'oyun-ici') categoryKey = 'genel';
             if (selectedCategory === 'oyun-disi') categoryKey = 'mulakat';
@@ -106,7 +106,7 @@ module.exports = {
                 ],
             });
 
-            // Ticket bilgilerini kaydet
+            
             db.set(`ticketChannelUser_${interaction.guild.id}_${supportChannel.id}`, { 
                 user: interaction.user.id,
                 yetkili: null,
@@ -114,7 +114,7 @@ module.exports = {
                 messageId: null
             });
             
-            // Ticket türünü kaydet (istatistikler için)
+            
             db.set(`ticketType_${interaction.guild.id}_${supportChannel.id}`, selectedCategory);
 
             const embed = new EmbedBuilder()
