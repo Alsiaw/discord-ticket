@@ -80,8 +80,7 @@ module.exports = {
                     }
                 }
                 
-                // Ticket counter'ı koruyoruz, sıfırlamıyoruz
-                // Böylece ticket numaralandırması devam eder
+               
                 
                 const successEmbed = new EmbedBuilder()
                     .setColor("#141212")
@@ -95,7 +94,7 @@ module.exports = {
                     components: []
                 });
                 
-                // Log kanalına bilgi gönder
+            
                 const logChannelId = ayarlar.Ticket.ticketLog2;
                 if (logChannelId) {
                     const logChannel = interaction.guild.channels.cache.get(logChannelId);
