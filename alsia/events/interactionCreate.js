@@ -88,7 +88,7 @@ module.exports = {
 };
 
 async function handleDevral(interaction) {
-  // Yetki kontrolü
+  
   const hasStaffRole = ayarlar.Yetkiler.Staff.some(rolID => interaction.member.roles.cache.has(rolID));
   
   if (!hasStaffRole) {
